@@ -11,7 +11,7 @@ public class CreditController {
     @Autowired
     private CreditService creditService;
 
-    @GetMapping("getAllCreditData")
+    @GetMapping("/getAllCreditData")
     public List<Credit> getall() {
         return creditService.getall();
     }
